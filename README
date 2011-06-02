@@ -1,0 +1,18 @@
+# stout
+
+Extra Superior Porter ;)
+A porter stemmer implemention using a snowball-like syntax for defining rules. Rules are of the form {:c? condition :s1 "abc" :s2 "efg" :a action} 
+reading if condition is met, replace s1 with s2 and execute action.
+
+## Usage
+
+(use 'stout.porter-stemmer)
+(map porter-stemmer coll)
+
+Where coll is a collection of terms you intend to stem. Stemming output is a list of stemmed terms (stems). 
+
+## License
+
+Copyright (C) 2011 Andreas Kostler
+
+Distributed under the Eclipse Public License, the same as Clojure.
